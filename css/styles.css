@@ -1,129 +1,269 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background: #FFF;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background: #fff;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 /* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var #e7e9fc;
+  background: #fff;
+  flex-shrink: 0;
+}
+
 .logo {
-    color: #4D5AE5;
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-header {
-    color: #2E2F42;
+  color: #2e2f42;
+  padding-right: 76px;
 }
 
 .logo-footer {
-    color: #F4F4FD;
+  color: #f4f4fd;
+}
+
+.navigation-menu {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .nav-link {
-    color: #2E2F42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    text-decoration: none;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0 24px;
 }
 
-.nav-link:hover, .nav-link:focus, .nav-link:active {
-    color: #404BBF;
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: #404bbf;
+}
+
+.addresses {
+  display: inline-flex;
+  gap: 40px;
+  padding: 24px 0 24px;
 }
 
 .address {
-    color: #434455;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    text-decoration: none;
+  color: #434455;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  text-decoration: none;
 }
 
-.address:hover, .address:active, .address:focus {
-    color: #404BBF;
+.address:hover,
+.address:active,
+.address:focus {
+  color: #404bbf;
 }
 
 /* Hero */
 
-.hero-page{
-    background: #2E2F42;
+.hero-page {
+  background: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
 }
 .main-title {
-    color: #FFF;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02;
+  width: 496px;
+  margin: 0 auto;
 }
 
 .button {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    background: #4D5AE5;
-    cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04;
+  background: #4d5ae5;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 48px;
 }
 
-.button:hover, .button:focus {
-    background: #404BBF;
+.button:hover,
+.button:focus {
+  background: #404bbf;
 }
 
 /* Advantages */
 
+.advantages {
+  padding: 120px 0;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0;
+}
+
+.advantages-block {
+  display: flex;
+  width: calc (1128- 24 * 3) / 4;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 .section-title {
-    color: #2E2F42;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02;
+  text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+  margin: 0;
 }
 
 .heading {
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02;
+  margin: 0;
 }
 
 .text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  margin: 0;
 }
 
 /*Team*/
 .team-page {
-    background: #F4F4FD;
+  background: #f4f4fd;
+}
+
+.team-card {
+  display: inline-flex;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .member {
-    background: #FFF;
+  background: #fff;
+  display: inline-flex;
+  padding-bottom: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.member-text {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.portfolio-card {
+  padding-bottom: 120px;
+}
+
+.row-one {
+  display: inline-flex;
+  gap: 24px;
+}
+
+.row-two {
+  display: inline-flex;
+  gap: 24px;
+  padding-top: 48px;
+}
+
+.portfolio {
+  display: flex;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  border: 1px solid #e7e9fc;
+  background: #fff;
+}
+
+.portfolio-text {
+  padding: 0 16px;
+}
 /*Footer*/
+
 .footer {
-    background: #2E2F42;
+  background: #2e2f42;
+}
+
+.footer-logo {
+  padding-top: 101.5px;
 }
 
 .footer-text {
-    color: #F4F4FD;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  padding-bottom: 100px;
+  width: 264px;
 }
