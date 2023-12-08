@@ -24,16 +24,16 @@ ul {
 }
 
 /* Header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
   background: #fff;
   flex-shrink: 0;
 }
-
-
 
 .navigation-menu {
   display: flex;
@@ -54,17 +54,17 @@ ul {
   height: 24px;
   align-items: center;
   flex-shrink: 0;
+  margin-right: 76px;
 }
 .logo-header {
-  margin-right: 76px;
   color: #2e2f42;
 }
 .logo-footer {
   color: #f4f4fd;
 }
-.nav-list{
-display: flex;
-gap: 40px;
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
 .nav-link {
   color: #2e2f42;
@@ -105,7 +105,7 @@ gap: 40px;
 
 /* Hero */
 
-.hero-page {
+.hero-page-section {
   background: #2e2f42;
   padding: 188px 0;
   text-align: center;
@@ -149,21 +149,21 @@ gap: 40px;
 
 /* Advantages */
 .section {
-padding: 120px 0;  
+  padding: 120px 0;
 }
 
 .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-      margin-bottom: 8px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 .advantages {
   display: flex;
@@ -214,52 +214,59 @@ padding: 120px 0;
 .team-card {
   display: flex;
   gap: 24px;
-  
 }
 
 .member {
   background: #fff;
   display: inline-flex;
-  padding-bottom: 32px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
+.member-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.member-txt {
+  text-align: center;
+}
 .member-text {
   display: flex;
   width: 232px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 8px;
+  padding: 32px 0;
 }
 
 .portfolio-card {
+  display: flex;
   padding-bottom: 120px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio {
-  display: flex;
-  width: 360px;
+  width: calc((100% - 48px) / 3);
   height: 420px;
   padding-bottom: 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   flex-shrink: 0;
-  border: 1px solid #e7e9fc;
   background: #fff;
+  border: 1px solid #e7e9fc;
 }
-
+.portfolio-title {
+  margin-bottom: 8px;
+}
 .portfolio-text {
-  padding: 0 16px;
+  padding: 32px 16px;
 }
 /*Footer*/
 
